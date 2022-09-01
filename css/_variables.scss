@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Montaga-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Montaga-Regular'), url('../fonts/Montaga-Regular.ttf') format('ttf');
+    font-display: swap;
+}
+    
+
+@font-face {
+    font-family: 'Hero New Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New Regular'), url('../fonts/Hero New Regular.ttf') format('ttf');
+    font-display: swap;
+}
+    
+
+ @font-face {
+    font-family: 'Hero New SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New SemiBold'), url('../fonts/Hero New SemiBold.woff') format('woff');
+    font-display: swap;
+}
+    
+
+ @font-face {
+    font-family: 'Hero New Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New Bold'), url('../fonts/Hero New Bold.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hero New ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New ExtraBold'), url('../fonts/Hero New ExtraBold.woff') format('woff');
+    font-display: swap;
+}
+
+$white: #FFFFFF;
+$bg-body: #C5BDB4;
+$bg-btn: #C5BDB4 linear-gradient(90deg,#ba9d64,#fbe3a3 95.95%);
+$bg-arrow: linear-gradient(180deg, #FBE3A3 0%, #BA9D64 100%);
+
+$offyellow: #FEE196;
+$cyan: #008EAC;
+$purple: #46397E;
+$navyBlue: #445BB9;
+$blue: #132851;
+$darkblue: #1A1E31;
+$black: #1C1B19;
+
+$font1: 'Hero New Regular', serif;
+$font2: 'Hero New Regular', sans-serif;
+$font3: 'Hero New SemiBold', sans-serif;
+$font4: 'Hero New Bold', sans-serif;
+$font5: 'Hero New ExtraBold', sans-serif;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin bgCover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin fontMaker($family, $size, $weight, $lineHeight) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+}
